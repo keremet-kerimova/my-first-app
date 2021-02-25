@@ -41,7 +41,8 @@ function App() {
      {/* <Water frozen={false}/>
      <Water frozen={true}/> */}
      <Sum a="5" b="15"/>
-     <Random min = "8" max = "20"/>
+     <Random min = "5" max = "10"/>
+     
 
     </div>
   );
