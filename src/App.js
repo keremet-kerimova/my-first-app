@@ -11,6 +11,7 @@ import Length from "./components/Length";
 import Age from "./components/Age";
 import Year from "./components/Year";
 import Sum from "./components/Sum";
+import Random from "./components/Random";
 // import Switch from "./components/Switch";
 // import Round from "./components/Round";
 // import Water from "./components/Water";
@@ -40,6 +41,7 @@ function App() {
      {/* <Water frozen={false}/>
      <Water frozen={true}/> */}
      <Sum a="5" b="15"/>
+     <Random min = "8" max = "20"/>
 
     </div>
   );
