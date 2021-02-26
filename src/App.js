@@ -20,14 +20,22 @@
 import List from "./components/List";
 import Ol from "./components/OL";
 import Square from "./components/Square";
+import Ul from "./components/Ul";
 
 function App() {
   let richPeople =["Elon Mask","Jeff Besos"]
+  let peopleWealth = [
+    {name:"Jeff Musk", wealth:87451268},
+    {name:"Elon Musk", wealth:84512021},
+    {name:"Bill Gates", wealth:87894312},
+  ];
   return (
     <div className="App">
       <List items={richPeople}/>
       <Ol items={richPeople}/>
       <Square items={richPeople}/>
+      <Ul items={peopleWealth}/>
+
      </div>
   )
 }
