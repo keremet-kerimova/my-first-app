@@ -18,14 +18,16 @@
 // import Water from "./components/Water";
 
 import List from "./components/List";
-
+import Ol from "./components/OL";
 
 function App() {
   let richPeople =["Elon Mask","Jeff Besos"]
-
   return (
     <div className="App">
       <List items={richPeople}/>
+     </div>
+  )
+}
      
      {/* <ByeWorld/>
      <HelloWorld/>
@@ -49,9 +51,5 @@ function App() {
      {/* <Sum a="5" b="15"/>
      <Random min = "0" max = "10"/>
     //  <BiggerNumber /> */} 
-
-    </div>
-  );
-}
 
 export default App;

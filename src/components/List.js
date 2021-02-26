@@ -1,7 +1,8 @@
-const List = (props) => {
-     let list = []; 
+const List =(props)=> {
+     let list = []
         for(let i = 0; i < props.items.lenght; i++){
-            list.push(<li>{props.items[i]}</li>);
+            let item = props.items[i];
+            list.push(<li>{items}</li>);
         }
       return <ul>
         {list}
