@@ -19,6 +19,7 @@
 
 import List from "./components/List";
 import Ol from "./components/OL";
+import Square from "./components/Square";
 
 function App() {
   let richPeople =["Elon Mask","Jeff Besos"]
@@ -26,10 +27,14 @@ function App() {
     <div className="App">
       <List items={richPeople}/>
       <Ol items={richPeople}/>
+      <Square items={richPeople}/>
      </div>
   )
 }
-     
+   
+export default App;
+
+
      {/* <ByeWorld/>
      <HelloWorld/>
      <Chunga/>
@@ -52,5 +57,3 @@ function App() {
      {/* <Sum a="5" b="15"/>
      <Random min = "0" max = "10"/>
     //  <BiggerNumber /> */} 
-
-export default App;
