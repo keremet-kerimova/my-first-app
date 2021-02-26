@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <List items={richPeople}/>
+      <Ol items={richPeople}/>
      </div>
   )
 }
