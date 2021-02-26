@@ -21,6 +21,8 @@ import List from "./components/List";
 
 
 function App() {
+  let richPeople =["Elon Mask","Jeff Besos"]
+  
   return (
     <div className="App">
       <List items={richPeople}/>
