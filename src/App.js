@@ -12,6 +12,7 @@ import Age from "./components/Age";
 import Year from "./components/Year";
 import Sum from "./components/Sum";
 import Random from "./components/Random";
+import BiggerNumber from "./components/BiggerNumber";
 // import Switch from "./components/Switch";
 // import Round from "./components/Round";
 // import Water from "./components/Water";
@@ -26,7 +27,7 @@ function App() {
      <Chunga/>
      <Hochu v="more"/>
      <Hochu v="kosmos"/>   
-     <Book name="Rich man Poor women" author="Pobert"/>
+     <Book name="Rich dad Poor dad" author="Pobert Kyosaki"/>
      <Sing title="Keremetim" singer="Kadyraliev"/>
      <Length  string="Example string" />
      <Length string="Hello world"/>
@@ -41,8 +42,8 @@ function App() {
      {/* <Water frozen={false}/>
      <Water frozen={true}/> */}
      <Sum a="5" b="15"/>
-     <Random min = "5" max = "10"/>
-     
+     <Random min = "0" max = "10"/>
+     <BiggerNumber />
 
     </div>
   );
