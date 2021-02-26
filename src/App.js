@@ -21,6 +21,7 @@ import List from "./components/List";
 import Ol from "./components/OL";
 import Square from "./components/Square";
 import Ul from "./components/Ul";
+import Table from "./components/Table";
 
 function App() {
   let richPeople =["Elon Mask","Jeff Besos"]
@@ -35,6 +36,7 @@ function App() {
       <Ol items={richPeople}/>
       <Square items={richPeople}/>
       <Ul items={peopleWealth}/>
+      <Table items={peopleWealth}/>
 
      </div>
   )
