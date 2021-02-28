@@ -22,6 +22,8 @@ import Ol from "./components/OL";
 import Square from "./components/Square";
 import Ul from "./components/Ul";
 import Table from "./components/Table";
+import Roood from "./components/Roood";
+import UpperCaseList from "./components/UpperCaseList";
 
 function App() {
   let richPeople =["Elon Mask","Jeff Besos"]
@@ -30,6 +32,8 @@ function App() {
     {name:"Elon Musk", wealth:84512021},
     {name:"Bill Gates", wealth:87894312},
   ];
+  let number = [4,6,1, 9, 2]
+
   return (
     <div className="App">
       <List items={richPeople}/>
@@ -37,6 +41,8 @@ function App() {
       <Square items={richPeople}/>
       <Ul items={peopleWealth}/>
       <Table items={peopleWealth}/>
+      <Roood items={number}/>
+      <UpperCaseList/>
 
      </div>
   )
