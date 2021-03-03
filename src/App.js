@@ -1,7 +1,7 @@
 
 //  import Switch from "./components/Switch1";
  import YourName from "./components/YourName";
- import Massive from "./components/Massiv";
+ import Massive from "./components/Massive";
 
 function App() {
 return(
