@@ -8,6 +8,9 @@
  import InputTypeRange from "./components/InputTypeRange";
  import InputRate from "./components/InputRate";
  import Temps from "./components/Temps";
+ import Style from "./components/Style";
+ import StyleColor from "./components/StyleColor";
+ import ColorSlider from "./components/ColorSlider";
 
 function App() {
 return(
@@ -22,6 +25,9 @@ return(
       <InputTypeRange min={0} max={10} value={3}/>
       <InputRate/>
       <Temps/>
+      <Style/>
+      <StyleColor/>
+      <ColorSlider/>
 
      </div>
   )
