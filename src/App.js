@@ -10,7 +10,7 @@
  import Temps from "./components/Temps";
  import Style from "./components/Style";
  import StyleColor from "./components/StyleColor";
- import ColorSlider from "./components/ColorSlider";
+//  import ColorSlider from "./components/ColorSlider";
 
 function App() {
 return(
@@ -27,7 +27,7 @@ return(
       <Temps/>
       <Style/>
       <StyleColor/>
-      <ColorSlider/>
+      {/* <ColorSlider/> */}
 
      </div>
   )
