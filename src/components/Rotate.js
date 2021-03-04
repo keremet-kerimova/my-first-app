@@ -1,12 +1,11 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function StyleColor() {
-    const [r, setR] = useState(0);
-    const [g, setG] = useState(0);
-    const [b, setB] = useState(0);
+function Rotate() {
+    const [rotate, setR] = useState(0);
+    
     return (
-        <div className="StyleColor"  style={{ backgroundColor: `rgb(${r}, ${g}, ${b})`}}>
-            <div>
+        <div className="Rotate"  >
+            <div style={{ background: "blue", height:"100px", weight:"100px", transform:"scile"+}}>>
                 <input type="range" value={r} min="0" max="255" onInput={({target}) => setR(target.value)} />
             </div>
             <div>
@@ -18,6 +17,4 @@ function StyleColor() {
         </div>
     );
 }
-
-    
-export default StyleColor;
+export default Rotate;

@@ -1,13 +1,18 @@
-const { useState } = require("react")
+// const { useState } = require("react")
 
-function ColorSlider({value}){
+// function ColorSlider(){
+//     const[r,setR]=useState(0);
+//     const[g,setG]=useState(0);
+//     const[b,setB]=useState(0);
 
-    const [color, setColor] = useState(value ?? "#000000");
-
-    return <div className="example-8">
-        <span
-            {/* <p>{color}</p>
-            <input type="color" onInput={(event) => setColor(event.target.value)}/> */}
-    </div>   
-}
-export default ColorSlider ;
+//     return <div className="ColorSides">
+//        style={{bacgroundColor:rgb(${r}, ${g}, ${b} )}}>
+//        <div>
+//            inpu
+//        </div>
+//         <span
+//             {/* <p>{color}</p>
+//             <input type="color" onInput={(event) => setColor(event.target.value)}/> */}
+//     </div>   
+// }
+// export default ColorSlider ;
