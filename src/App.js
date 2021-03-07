@@ -10,6 +10,8 @@
  import Temps from "./components/Temps";
  import Style from "./components/Style";
  import StyleColor from "./components/StyleColor";
+ import Rotate from "./components/Rotate";
+ import Reverse from "./components/Reverse";
 //  import ColorSlider from "./components/ColorSlider";
 
 function App() {
@@ -27,6 +29,8 @@ return(
       <Temps/>
       <Style/>
       <StyleColor/>
+      <Rotate/>
+      <Reverse/>
       {/* <ColorSlider/> */}
 
      </div>
