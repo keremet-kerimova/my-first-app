@@ -1,0 +1,7 @@
+.GreenButton{
+    border-style: 10px  dotted green;
+    height: 40px;
+    border-width: 2px;
+    background-color: white;
+    margin-left: 10px;
+}
