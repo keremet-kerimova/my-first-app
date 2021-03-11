@@ -1,41 +1,47 @@
 
-//  import Switch from "./components/Switch1";
- import YourName from "./components/YourName";
- import Massive from "./components/Massive";
- import Decrise from "./components/Decrise";
- import Length from "./components/Length";
- import Colors from "./components/Colors";
- import InputTypeRange from "./components/InputTypeRange";
- import InputRate from "./components/InputRate";
- import Temps from "./components/Temps";
- import Style from "./components/Style";
- import StyleColor from "./components/StyleColor";
- import Rotate from "./components/Rotate";
- import Reverse from "./components/Reverse";
-//  import ColorSlider from "./components/ColorSlider";
+// import Person from "./10.03.21/Person";
+// import Button from "./10.03.21/Button";
+// import SimpleButton from "./10.03.21/SimpleButton";
+// import "./App.css";
+// import PinkButton from "./10.03.21/PinkButton";
+// import RedButton from "./10.03.21/RedButton";
+// import GreenButton from "./10.03.21/GreenButton/GreenButton";
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <Person name="Elon Baike" age={47}>
+//         Ice skating, Eating donuts, Dancing under the moon
+//       </Person>
+//       <Person name="Bill Baike" age={50}>
+//         Saving the world
+//       </Person>
+//       <span className="highlight">Hello</span>
+//       <Button className="Button">Sumbit</Button>
+//       <SimpleButton>Style#1</SimpleButton>
+//       <PinkButton>Style#2</PinkButton>
+//       <RedButton>Style#3</RedButton>
+//       <GreenButton>Style#4</GreenButton>
+
+
+
+//     </div>
+//   );
+// }
+// export default App;
+
+import Person from "./10.03.21/Person";
+import "./App.css";
+import PersonList from "./10.03.21/PersonList/PersonList";
 function App() {
-return(
+  const persons = [
+    { name: "Elon Baike", age: 47, hobby: "Ice skating, Eating donuts, Dancing under the moon" },
+    { name: "Bill Baike", age: 50, hobby: "Saving the world" }
+  ];
+  return (
     <div className="App">
-      {/* <Switch title="WiFi"/>
-      <Counter/> */}
-      <YourName/>
-      <Massive/>
-      <Decrise/>
-      <Length/>
-      <Colors/>
-      <InputTypeRange min={0} max={10} value={3}/>
-      <InputRate/>
-      <Temps/>
-      <Style/>
-      <StyleColor/>
-      <Rotate/>
-      <Reverse/>
-      {/* <ColorSlider/> */}
-
-     </div>
-  )
+      <PersonList persons={persons} />
+    </div>
+  );
 }
-   
 export default App;
-
