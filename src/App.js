@@ -1,5 +1,5 @@
 
-import Person from "./13.03.21/Person";
+import Person from "./13.03.21/Person/Person";
 
 function App() {
   const persons = [
