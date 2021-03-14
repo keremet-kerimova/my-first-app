@@ -19,10 +19,14 @@
 .wpm {
     text-align: center;
     padding-top: 5px;
+    font-style: italic;
+    color: blue;
 }
 .commits {
     text-align: center;
     padding-top: 5px;
+    color:black;
+    font-style:unset;
 }
 .Photo {
     padding-top: 15px;
@@ -34,4 +38,6 @@
     height: 150px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    margin-left: 25px;
+    margin-top: 10px;
 }
