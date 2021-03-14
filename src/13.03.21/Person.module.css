@@ -6,3 +6,32 @@
     padding-top: 10px;
     border-radius: 15px;
 }
+.name {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+.role {
+    text-align: center;
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.wpm {
+    text-align: center;
+    padding-top: 5px;
+}
+.commits {
+    text-align: center;
+    padding-top: 5px;
+}
+.Photo {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
