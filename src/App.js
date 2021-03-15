@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import Person from "./13.03.21/Person";
 import PersonList from "./13.03.21/PersonList";
 
@@ -36,9 +37,25 @@ function App() {
    const students = persons.filter(person => person.role == "Student");
    const wpms = persons.filter(person => person.wpm > 35);
    const commits = persons.filter(person => person.commits > 35);
+
+
+
+   const[ filterStudents,setFilterStudents]=useState(false);
+
   return (
     <div className="App">
+      <div>
+        <label>
+        <input type="checkbox"
+         checked={filterStudents}
+         onChange={()=> setFilterStudents(!filterStudents)}
+         /> Only students
+        </label>
+        
+      </div>
      <PersonList persons={persons}/>
+  
+
     </div>
   );
 }
