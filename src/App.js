@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Person from "./13.03.21/Person";
 import PersonList from "./13.03.21/PersonList";
+import Filter from "./15.03.21/Filter";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     { name: "Erjan", photo: "https://avatars.githubusercontent.com/u/75364569?s=460&u=41423e83599f6073887a5c5bce317657a3e8cb0b&v=4", role: "Student", wpm: 19, commits: 9959 },
     { name: "Ermek", photo: "https://avatars.githubusercontent.com/u/75364237?s=460&v=4", role: "Student", wpm: 28, commits: 6655 },
     { name: "Aiymkyz", photo: "https://avatars.githubusercontent.com/u/75364237?s=460&v=4", role: "Student", wpm: 37, commits: 226 },
-    { name: "Kerimova Keremet", photo: "https://avatars.githubusercontent.com/u/75364381?s=460&u=45e3b4a4b507e9aa2183b3241f23a50bee90a033&v=4", role: "Student", wpm: 41, commits: 999 },
+    { name: "Kerimova Keremet", photo: "https://avatars.githubusercontent.com/u/75364381?s=460&u=45e3b4a4b507e9aa2183b3241f23a50bee90a033&v=4", role: "Student", wpm: 41, commits: 1999 },
     { name: "Karlygach", photo: "https://avatars.githubusercontent.com/u/75364237?s=460&v=4", role: "Student", wpm: 25, commits: 66 },
     { name: "Keremet", photo: "https://avatars.githubusercontent.com/u/75364237?s=460&v=4", role: "Student", wpm: 32, commits: 52 },
     { name: "Kutman", photo: "https://avatars.githubusercontent.com/u/75364237?s=460&v=4", role: "Student", wpm: 33, commits: 99 },
@@ -34,16 +35,34 @@ function App() {
   ];
   // const students = persons.filter(person => person.role == "Student");
   //  const fast = students.filter(persons => persons.wpm > 34);
-   const students = persons.filter(person => person.role == "Student");
-   const wpms = persons.filter(person => person.wpm > 35);
-   const commits = persons.filter(person => person.commits > 35);
+  //  const students = persons.filter(person => person.role == "Student");
+  //  const wpms = persons.filter(person => person.wpm > 35);
+  //  const commits = persons.filter(person => person.commits > 35);
 
 
 
    const[ filterStudents,setFilterStudents]=useState(false);
+   const[filterWpm, setFilterWpm]= useState(false);
+   const[filterCommits, setFilterCommits] = useState(false);
 
+   let students = persons;
+   if(filterStudents){
+     students = persons.filter(person => person.role == "Student")
+   }
+
+   
+   let wpm = students;
+   if(filterWpm){
+     wpm = students.filter(person => person.wpm > 34)
+   }
+   let commits = wpm;
+   if(filterCommits){
+     commits = wpm.filter(person => person.commits > 1000 )
+   }
+   
   return (
     <div className="App">
+      <Filter state = {filterStudents} change={()=> setFilterStudents(!filterStudents)}>Only students</Filter>
       <div>
         <label>
         <input type="checkbox"
@@ -51,9 +70,28 @@ function App() {
          onChange={()=> setFilterStudents(!filterStudents)}
          /> Only students
         </label>
+
+
+        <div>
+        <label>
+        <input type="checkbox"
+         checked={filterWpm}
+         onChange={()=> setFilterWpm(!filterWpm)}
+         /> Fast WPM
+        </label>
+        </div>
+
+        <div>
+        <label>
+        <input type="checkbox"
+         checked={filterCommits}
+         onChange={()=> setFilterCommits(!filterCommits)}
+         /> Commitis
+        </label>
+        </div>
         
       </div>
-     <PersonList persons={persons}/>
+     <PersonList persons={commits}/>
   
 
     </div>
