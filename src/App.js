@@ -92,6 +92,8 @@ function App() {
         
       </div>
      <PersonList persons={commits}/>
+    <div>Yntymak</div>
+
   
 
     </div>
